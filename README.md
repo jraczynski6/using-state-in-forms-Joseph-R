@@ -1,16 +1,51 @@
-# React + Vite
+Practice: Using State in Forms
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Instructions
 
-Currently, two official plugins are available:
+Create a dynamic user feedback form using controlled inputs in React. This activity
+will reinforce the use of state to manage form data, capture user input with
+onChange, and dynamically display the form data in real-time.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Tasks
 
-## React Compiler
+Part 1: Create the Feedback Form
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Set Up State
+    ○ Initialize state for the user's name, email, and feedback using a single
+formData object in the component.
 
-## Expanding the ESLint configuration
+2. Build the Form UI
+    ○ Create input fields for the name, email, and feedback text (textarea).
+    ○ Use the name attribute for each input to match the keys in formData
+(e.g., name, email, feedback).
+    ○ Use the onChange event to dynamically update state when users type
+in the fields.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. Add Real-Time Feedback Preview
+    ○ Below the form, display the user’s inputs in real-time using the
+formData state.
+
+Part 2: Styling
+
+1. Enhance Form Appearance
+    ○ Use CSS to center the form and add padding, borders, and spacing for
+a polished look.
+
+2. Optional Features
+    ○ Add a character counter below the feedback textarea.
+    ○ Disable the "Submit" button if any field is empty.
+
+1
+Example User Experience
+    1. The form has the following fields:
+        ○ Name: A text input for the user's name.
+        ○ Email: An email input for the user's email address.
+        ○ Feedback: A textarea for feedback with a 200-character limit.
+    2. As the user types, the state updates, and the real-time preview displays their
+input below the form.
+
+Deliverable, A functional feedback form that:
+
+● Dynamically updates state using a single handleChange function.
+● Displays the user’s input in real-time below the form.
+● Is visually styled for a clean, user-friendly interface.
