@@ -33,7 +33,7 @@ export default function UserForm() {
                         </label>
                         <label>
                             Feedback:
-                            <textarea name="feedback" value={formData.feedback} placeholder="Please write your feedback here." onChange={handleChange} maxLength="200" />
+                            <textarea name="feedback" value={formData.feedback} placeholder="Please write your feedback here." onChange={handleChange} maxLength="200" rows="6" />
                         </label>
                         <br/>
                         <button type="submit" disabled={isDisabled}>Submit Form</button>

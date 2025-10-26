@@ -2,7 +2,8 @@ body {
     background-color: aliceblue;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .page-container {
@@ -10,10 +11,12 @@ body {
     flex-direction: column;
     align-items: center;
     background: #fff;
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     padding: 25px 30px;
     border-radius: 12px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
 }
 
 h1 {
@@ -30,8 +33,9 @@ form {
     background: #f7f7f7;
     padding: 18px;
     border-radius: 8px;
-    width: 600px;
+    width: 100%;
     border: 1px solid #e1e1e1;
+    box-sizing: border-box;
 }
 
 button:disabled {
@@ -40,11 +44,14 @@ button:disabled {
 }
 
 .preview-container {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     background: #f7f7f7;
     padding: 18px;
     border-radius: 8px;
     border: 1px solid #e1e1e1;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 fieldset {
@@ -53,9 +60,8 @@ fieldset {
     padding: 18px;
     background-color: #f7f7f7;
     margin: 0;
-    width: 80%;
+    width: 100%;
     box-sizing: border-box;
-    gap: 15px;
     padding: 20px;
 }
 
@@ -75,5 +81,10 @@ form textarea {
     width: 100%;
     padding: 8px;
     border-radius: 6px;
-    border: 1px solid #ccc
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+form textarea {
+    min-height: 100px;
 }
